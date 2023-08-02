@@ -7,7 +7,7 @@ def render_gui():
 
     frm_name = Frame()
 
-    lbl_name = Label(master=frm_name, text="Nome:")
+    lbl_name = Label(master=frm_name, text="Nome completo:")
     lbl_name.pack()
 
     lbl_candidate = Label(master=frm_name)
