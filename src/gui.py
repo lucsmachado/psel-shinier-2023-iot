@@ -1,5 +1,13 @@
 from tkinter import *
+from tkinter import messagebox as mb
 from tkinter.ttk import *
+
+def user_allows_restart():
+    prompt_answer = mb.askokcancel(
+        title='Nova versão detectada', 
+        message="Detectamos uma nova versão do programa. Seu programa será reiniciado automaticamente para aplicá-las. Deseja continuar?"
+    )
+    return prompt_answer
 
 def render_gui():
     window = Tk()
