@@ -10,7 +10,7 @@ def get_latest_commit(repo):
     repo.remotes.origin.pull()
     return repo.head.commit
 
-def check_for_updates(repo, interval=10):
+def check_for_updates(repo):
     curr_commit = repo.head.commit
     latest_commit = get_latest_commit(repo)
     print(f'> Updated at {datetime.datetime.now()}')
