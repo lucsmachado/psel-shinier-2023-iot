@@ -31,7 +31,7 @@ def render_gui():
 
     btn_submit = Button(
         master=frm_name,
-        text="Click me",
+        text="Cadastrar",
         command=handle_submit
     )
     btn_submit.pack()
