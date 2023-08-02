@@ -36,7 +36,7 @@ def read_repo():
         on_latest_commit = True
         while on_latest_commit:
             print('> STATUS: Up to date!')
-            time.sleep(10)
+            time.sleep(5)
             on_latest_commit = check_for_updates(repo)
 
         if user_allows_restart():
