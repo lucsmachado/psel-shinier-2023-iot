@@ -5,7 +5,7 @@ from tkinter.ttk import *
 def user_allows_restart():
     prompt_answer = mb.askokcancel(
         title='Nova versão detectada', 
-        message="Detectamos uma nova versão do programa. Seu programa será reiniciado automaticamente para aplicá-las. Deseja continuar?"
+        message="Detectamos uma nova versão e seu programa será reiniciado. Deseja continuar?"
     )
     return prompt_answer
 
