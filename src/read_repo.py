@@ -19,7 +19,6 @@ def read_repo():
         print(f'Repo at {repo_path} successfully loaded at {datetime.datetime.now()}.')
         origin = repo.remotes.origin
         while True:
-            time.sleep(5)
             origin.pull()
             print(f'Updated at {datetime.datetime.now()}')
             if curr_commit == repo.head.commit:
