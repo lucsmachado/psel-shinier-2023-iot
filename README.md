@@ -1,4 +1,4 @@
-# Processo Seletivo Shinier 2023
+# Processo Seletivo Shinier IoT 2023
 Desafio técnico do processo seletivo para vaga de estágio em IoT na Shinier.
 # Demonstração
 ![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanQ5bHEwcG00ZnN0ZWptZmdlbWZsd3MwNjYwdXlsaTVzNmpicHE3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yaAJheSvcPorhZ4KJe/giphy.gif)
