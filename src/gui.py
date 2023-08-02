@@ -9,8 +9,16 @@ def user_allows_restart():
     )
     return prompt_answer
 
+def center(w):
+    """
+    Centers a window on the screen.
+    @param w: the window to be centered
+    """
+    w.eval('tk::PlaceWindow . center')
+
 def render_gui():
     window = Tk()
+    window.geometry('300x100')
     window.title("Processo Seletivo Shinier 2023")
 
     frm_name = Frame()
@@ -38,6 +46,7 @@ def render_gui():
 
     frm_name.pack()
 
+    center(window)
     window.mainloop()
 
 if __name__ == '__main__':
