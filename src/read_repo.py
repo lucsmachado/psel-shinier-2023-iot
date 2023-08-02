@@ -22,7 +22,7 @@ def read_repo():
             origin.pull()
             print(f'Updated at {datetime.datetime.now()}')
             if curr_commit == repo.head.commit:
-                time.sleep(10)
+                time.sleep(5)
             else:
                 print('Changes detected. Restarting...')
                 os.execv(sys.executable, ['python3'] + sys.argv)
