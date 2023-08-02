@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import datetime
 from dotenv import load_dotenv
@@ -12,15 +13,19 @@ def read_repo():
         raise FileNotFoundError('Environment variables .env file not found.\nPlease create one based on the provided .env.example and try again.')
 
     repo = Repo(repo_path)
+    curr_commit = repo.head.commit
 
     if not repo.bare:
         print(f'Repo at {repo_path} successfully loaded at {datetime.datetime.now()}.')
         origin = repo.remotes.origin
-        origin.pull()
         while True:
-            time.sleep(10)
             origin.pull()
             print(f'Updated at {datetime.datetime.now()}')
+            if curr_commit == repo.head.commit:
+                time.sleep(10)
+            else:
+                print('Changes detected. Restarting...')
+                os.execv(sys.executable, ['python3'] + sys.argv)
     else:
         print(f'Could not load repo at {repo_path}.')	
 
