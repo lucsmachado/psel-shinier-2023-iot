@@ -1,6 +1,8 @@
 # Processo Seletivo Shinier IoT 2023
 Desafio técnico do processo seletivo de 2023 para vaga de estágio em IoT na Shinier.
 # Demonstração
+Confira o vídeo de demonstração no YouTube clicando [aqui](https://youtu.be/nyfQ_d0RW3Y).
+
 ![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanQ5bHEwcG00ZnN0ZWptZmdlbWZsd3MwNjYwdXlsaTVzNmpicHE3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yaAJheSvcPorhZ4KJe/giphy.gif)
 # Emulação da Raspberry Pi
 Para configurar a máquina virtual usa-se o sotware livre e gratuito QEMU.
