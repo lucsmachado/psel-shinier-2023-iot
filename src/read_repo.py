@@ -18,7 +18,7 @@ def read_repo():
         origin = repo.remotes.origin
         origin.pull()
         while True:
-            time.sleep(3600)
+            time.sleep(10)
             origin.pull()
             print(f'Updated at {datetime.datetime.now()}')
     else:
